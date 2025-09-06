@@ -14,12 +14,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class pharmacistServiceTest {
 
     Drugs drugs;
-    pharmacistService pharmacistService;
+    PharmacistService pharmacistService;
 
     @BeforeEach
     void setUp() {
         drugs = new Drugs();
-        pharmacistService = new pharmacistService();
+        pharmacistService = new PharmacistService();
     }
 
     @Test

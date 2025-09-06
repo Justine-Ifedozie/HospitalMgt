@@ -7,7 +7,7 @@ import dtos.responses.AddDrugResponse;
 import static utils.Mapper.map;
 
 
-public class pharmacistService {
+public class PharmacistService {
 
     private final Drugs drugs = new Drugs();
 
