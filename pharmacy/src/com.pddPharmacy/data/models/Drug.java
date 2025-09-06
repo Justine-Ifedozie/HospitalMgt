@@ -8,9 +8,10 @@ public class Drug {
     private String name;
     private LocalDate expiry;
     private LocalDate manufacturedOn;
-    private LocalDateTime dateAdded;
+    private LocalDateTime dateAdded = LocalDateTime.now();
     private Type type;
     private Category category;
+    private int quantity;
 
     public int getId() {
         return id;
@@ -67,4 +68,19 @@ public class Drug {
     public void setCategory(Category category) {
         this.category = category;
     }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
 }
+
+
+
+
+
+
