@@ -8,7 +8,7 @@ public class PharmacistController {
 
     private final PharmacistService pharmacistService = new PharmacistService();
 
-    private AddDrugResponse recordNewDrug(AddDrugRequest addDrugRequest){
+    public AddDrugResponse recordNewDrug(AddDrugRequest addDrugRequest){
         return pharmacistService.addDrug(addDrugRequest);
     }
 }

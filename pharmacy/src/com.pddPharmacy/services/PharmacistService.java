@@ -13,7 +13,7 @@ public class PharmacistService {
 
     public AddDrugResponse addDrug(AddDrugRequest addDrugRequest) {
         Drug drug = new Drug();
-        map(addDrugRequest, new Drug());
+        map(addDrugRequest, drug);
         drugs.save(drug);
         return map(drug);
     }
